@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-lue: hsl(210, 46%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--light-grayish-lue);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    margin: 50px 20px;
+}
+
+.main .drawer{
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+@media (max-width: 376px){
+    .main .drawer{
+        height: 175px;
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 20px 30px;
+}
+
+.text .heading{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--very-dark-grayish-blue);
+}
+
+.text .body-text{
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 25px;
+}
+
+.text .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.text .user .share-button{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    width: calc(100% + 60px);
+    height: 60px;
+    left: -30px;
+    bottom: -20px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+.text .user .share-button .media-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    letter-spacing: 5px;
+}
+
+.text .user .share-button .media-icon .icon-white{
+    margin-left: 10px;
+}
+
+.text .user .share-button .media-icon .icon-white img{
+    margin: 0 5px;
+}
+
+.text .user .share-button .share-icon{
+    margin-right: 40px;
+}
+
+.text .user .share-button ul li{
+    list-style-type: none;
+}
+
+.text .user .michelle{
+    border-radius: 50%;
+    display: flex;
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.text .user .user-name{
+    display: flex;
+    align-items: center;
+}
+
+.text .user .user-name .name{
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+}
+
+.text .user .user-name .date{
+    color: var(--desaturated-dark-blue);
+}
+
+.text .user .icon{
+    margin-left: 5rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
