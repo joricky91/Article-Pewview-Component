@@ -30,13 +30,13 @@ body{
     border-radius: 10px;
     background-color: white;
     margin: 50px 20px;
-    width: 295px;
-    height: 480px;
+    width: 320px;
+    height: 450px;
 }
 
 @media (min-width: 379px){
     .main{
-        height: 540px;
+        height: 510px;
     }
 }
 
@@ -50,6 +50,18 @@ body{
 @media (max-width: 376px){
     .main .drawer{
         height: 175px;
+    }
+}
+
+@-moz-document url-prefix(){
+    .main{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        margin: 50px 20px;
+        width: 340px;
+        height: 510px;
     }
 }
 
@@ -139,6 +151,12 @@ body{
     margin-left: 3.5rem;
 }
 
+@-moz-document url-prefix(){
+    .text .user .icon{
+        margin-left: 6.5rem;
+    }
+}
+
 .text .user .michelle{
     border-radius: 50%;
     display: flex;
@@ -189,6 +207,12 @@ body{
         border-radius: 10px 0 0 10px;
     }
 
+    @-moz-document url-prefix(){
+        .main .drawer{
+            width: 118%;
+        }
+    }
+
     .text{
         height: 100%;
         margin: 10px 35px 5px 35px;
@@ -217,6 +241,12 @@ body{
         left: 93%;
         bottom: 130%;
         transform: rotate(45deg);
+    }
+
+    @-moz-document url-prefix(){
+        .text .user .share-button{
+            left: 205px;
+        }
     }
 
     .text .user .share-button .media-icon p{
@@ -252,6 +282,7 @@ body{
 }
 
 .attribution { 
+    text-align: center;
     font-size: 11px; 
     bottom: 0;
     margin-bottom: 10px;
